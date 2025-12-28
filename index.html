@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenzo's Gallery</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Kenzo's Gallery</h1>
+  </header>
+
+  <main id="gallery" class="gallery"></main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next">&rsaquo;</button>
+    <div class="lightbox-content">
+      <div class="lightbox-media"></div>
+      <p class="lightbox-description"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Press <kbd>Esc</kbd> to close &bull; <kbd>&larr;</kbd> <kbd>&rarr;</kbd> to navigate</p>
+  </footer>
+
+  <!-- Floating Action Button -->
+  <button id="fab" class="fab" aria-label="Show message">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 16v-4M12 8h.01" />
+    </svg>
+  </button>
+
+  <!-- Message Dialog -->
+  <div id="messageDialog" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog">
+      <div class="dialog-header">
+        <h2>About</h2>
+        <button class="dialog-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <p id="dialogMessage">
+			08.30AM 28 December 2024
+		
+		</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="gallery.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

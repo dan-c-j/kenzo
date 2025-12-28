@@ -45,8 +45,9 @@ header h1 {
 }
 
 header p {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-primary);
 }
